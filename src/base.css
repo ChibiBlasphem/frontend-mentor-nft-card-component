@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+    .attribution {
+        @apply text-white text-center text-xs;
+    }
+
+    .attribution a {
+        @apply text-primary-cyan;
+    }
+}
+
+@tailwind utilities;

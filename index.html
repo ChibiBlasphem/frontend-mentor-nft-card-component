@@ -4,30 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/dist/styles.css">
   
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<body class="relative min-h-screen bg-neutral-blue-3x font-display font-light">
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-2xl bg-neutral-blue-2x p-6 w-[325px] sm:w-[350px] rounded-xl grid grid-cols-2 gap-5">
+    <a href="#" class="block relative col-span-2 group rounded-lg overflow-hidden">
+      <img src="/images/image-equilibrium.jpg" alt="Card main picture" class="col-span-2" />
+      <div class="absolute invisible group-hover:visible top-0 left-0 h-full w-full bg-primary-cyan/60 bg-[url(/images/icon-view.svg)] bg-no-repeat bg-center">
+      </div>
+    </a>
+    
+    <a href="#" class="text-white col-span-2 text-xl sm:text-2xl font-normal hover:text-primary-cyan">Equilibrium #3429</a>
 
-  Equilibrium #3429
+    <p class="text-primary-soft col-span-2 text-base sm:text-lg">
+      Our Equilibrium collection promotes balance and calm.
+    </p>
 
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+    <span class="text-primary-cyan"><img src="/images/icon-ethereum.svg" class="inline-block mr-1" />0.041 ETH</span>
+    <span class="text-primary-soft text-right"><img src="/images/icon-clock.svg" class="inline-block mr-1" />3 days left</span>
+    
+    <div class="h-px bg-neutral-blue col-span-2"></div>
+    
+    <div class="col-span-2 flex">
+      <img src="/images/image-avatar.png" alt="Jules Wyvern avatar" class="relative mr-3 border border-solid border-white rounded-full h-8 -translate-y-1" />
+      <span class="text-primary-soft">Creation of <a href="#" class="text-white hover:text-primary-cyan">Jules Wyvern</a></span>
+    </div>
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/ChibiBlasphem">Christopher Debove</a>.
   </div>
 </body>
 </html>

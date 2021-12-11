@@ -4,5 +4,16 @@
   "main": "index.js",
   "author": "Christopher Debove <christopher.debove@toucantoco.com>",
   "license": "MIT",
-  "packageManager": "yarn@3.1.1"
+  "packageManager": "yarn@3.1.1",
+  "scripts": {
+    "dev": "concurrently 'yarn dev:css' 'yarn serve .'",
+    "dev:css": "tailwindcss -i ./src/base.css -o ./dist/styles.css --watch",
+    "build:css": "tailwindcss -i ./src/base.css -o ./dist/styles.css"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "prettier": "^2.5.1",
+    "serve": "^13.0.2",
+    "tailwindcss": "^3.0.1"
+  }
 }
