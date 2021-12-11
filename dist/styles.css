@@ -515,8 +515,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: grid;
 }
 
-.hidden {
-  display: none;
+.h-full {
+  height: 100%;
 }
 
 .h-px {
@@ -527,28 +527,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
 
-.w-\[350px\] {
-  width: 350px;
+.w-\[325px\] {
+  width: 325px;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[300px\] {
-  width: 300px;
-}
-
-.w-\[325px\] {
-  width: 325px;
 }
 
 .-translate-x-1\/2 {
@@ -613,25 +601,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: hsl(216 50% 16% / var(--tw-bg-opacity));
 }
 
+.bg-primary-cyan\/60 {
+  background-color: hsl(178 100% 50% / 0.6);
+}
+
 .bg-neutral-blue {
   --tw-bg-opacity: 1;
   background-color: hsl(215 32% 27% / var(--tw-bg-opacity));
 }
 
-.bg-primary-cyan\/80 {
-  background-color: hsl(178 100% 50% / 0.8);
-}
-
-.bg-primary-cyan\/75 {
-  background-color: hsl(178 100% 50% / 0.75);
-}
-
-.bg-primary-cyan\/60 {
-  background-color: hsl(178 100% 50% / 0.6);
-}
-
-.bg-\[url\(\/images\/icon-view\.svg\)\] {
-  background-image: url(/images/icon-view.svg);
+.bg-\[url\(\'\.\.\/images\/icon-view\.svg\'\)\] {
+  background-image: url('../images/icon-view.svg');
 }
 
 .bg-center {
@@ -652,16 +632,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-display {
   font-family: Outfit;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-xl {
