@@ -1,0 +1,8 @@
+{
+  "name": "nft-preview-card-component-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Christopher Debove <christopher.debove@toucantoco.com>",
+  "license": "MIT",
+  "packageManager": "yarn@3.1.1"
+}

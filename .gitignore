@@ -15,4 +15,14 @@
 .DS_Store
 .prettierignore
 
+# Node environment
 node_modules
+
+# Yarn berry
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
